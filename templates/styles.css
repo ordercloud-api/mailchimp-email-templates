@@ -322,10 +322,10 @@ a {
 
   .content-block {
     padding: 0 0 20px;
+    margin-bottom: 20px;
   }
 
   .oc-table {
-    margin-top: 20px;
     width: 100% !important;
   }
 }

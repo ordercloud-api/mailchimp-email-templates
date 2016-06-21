@@ -34,7 +34,7 @@ table td {
 .logo-header {
   font-size: 16px;
   color: #fff;
-  background-color: #0090DD;
+  background-color: #2692D5; /* OrderCloud Blue */
   font-weight: 500;
   padding: 20px;
   text-align: center;
@@ -82,7 +82,13 @@ body {
 }
 
 .content-block {
-  padding: 0 0 20px;
+  padding: 0 0 40px;
+}
+
+.message {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 40px;
+  display: block;
 }
 
 .footer {
@@ -102,7 +108,7 @@ body {
 h1, h2, h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #000;
-  margin: 40px 0 0;
+  margin: 20px 0 0;
   line-height: 1.2em;
   font-weight: 400;
 }
@@ -144,16 +150,13 @@ p li, ul li, ol li {
     LINKS & BUTTONS
 ------------------------------------- */
 a {
-  color: #0090DD;
+  color: #2692D5; /* OrderCloud Blue */
   text-decoration: underline;
 }
 
-.btn-primary {
+.btn {
   text-decoration: none;
   color: #FFF;
-  background-color: #0090DD;
-  border: solid #0090DD;
-  border-width: 10px 20px;
   line-height: 2em;
   /* 2em * 14px = 28px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
   /*line-height: 28px;*/
@@ -163,6 +166,18 @@ a {
   display: inline-block;
   border-radius: 5px;
   text-transform: capitalize;
+}
+
+.btn-primary {
+  background-color: #2692D5; /* OrderCloud Blue */
+  border: solid #2692D5; /* OrderCloud Blue */
+  border-width: 10px 20px;
+}
+
+.btn-default {
+  background-color: #999;
+  border: solid #999;
+  border-width: 10px 20px;
 }
 
 /* -------------------------------------
@@ -193,29 +208,78 @@ a {
 }
 
 /* -------------------------------------
+    ALERTS
+    Change the class depending on warning email, good email or bad email
+------------------------------------- */
+.alert {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px 3px 0 0;
+}
+.alert h1, 
+.alert h2, 
+.alert h3 {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+.alert a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.alert.alert-warning {
+  background-color: #FF9F00;
+}
+.alert.alert-bad {
+  background-color: #D0021B;
+}
+.alert.alert-good {
+  background-color: #68B90F;
+}
+
+/* -------------------------------------
     ORDERS
     Styles for the billing table
 ------------------------------------- */
-.order-table {
-  margin: 40px auto;
+.oc-table {
   text-align: left;
-  width: 80%;
-}
-.order-table td {
-  padding: 5px 0;
-}
-.order-table .order-table-items {
   width: 100%;
 }
-.order-table .order-table-items td {
+.oc-table td {
+  padding: 5px 0;
+}
+.oc-table .oc-table-items {
+  width: 100%;
+}
+.oc-table .oc-table-items td {
   border-top: #eee 1px solid;
 }
-.order-table .order-table-items .subtotal td {
+.oc-table .subtotal td {
   border-top: 2px solid #333;
 }
-.order-table .order-table-items .total td {
+.oc-table .total td {
   border-bottom: 2px solid #333;
   font-weight: 700;
+}
+
+.oc-table .condensed-table-items *{
+  font-size: 12px;
+  width: 100%;
+}
+
+.oc-table .condensed-table-items th {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 0 5px;
+}
+
+.oc-table .condensed-table-items td {
+  padding: 0 5px;
 }
 
 /* -------------------------------------
@@ -256,9 +320,12 @@ a {
     padding: 10px !important;
   }
 
-  .invoice {
+  .content-block {
+    padding: 0 0 20px;
+  }
+
+  .oc-table {
+    margin-top: 20px;
     width: 100% !important;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

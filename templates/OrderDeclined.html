@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Order Declined</title>
+<link href="styles.css" media="all" rel="stylesheet" type="text/css" />
+<style>
+/* -------------------------------------
+    PASTE STYLES HERE
+------------------------------------- */
+</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/EmailMessage">
+
+<table class="body-wrap">
+	<tr>
+		<td></td>
+		<td class="container" width="600">
+			<div class="content">
+				<table class="main" width="100%" cellpadding="0" cellspacing="0">
+					<tr>
+						<td class="alert alert-warning">
+							<h3>Your order from [Company Name] has been declined.</h3>
+						</td>
+					</tr>
+					<tr>
+						<td class="content-wrap">
+							<table width="100%" cellpadding="0" cellspacing="0">
+								<tr>
+									<td class="content-block message">
+										<h3>Reason for decline:</h3> [[ApprovalComments]]
+									</td>
+								</tr>
+								<tr>
+									<td class="content-block">
+                    <table class="oc-table">
+                      <tr>
+                        <td>
+                          <strong>Order ID:</strong> [[OrderID]]<br>
+                          <strong>Date Submitted:</strong> [[Date Submitted]]<br><br>
+                          <strong>The following line item(s) were included in your order:</strong><br><br>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table class="oc-table-items" cellpadding="0" cellspacing="0">
+                            <tr>
+                              <th><strong>ID</strong></th>
+                              <th><strong>Name</strong></th>
+                              <th class="aligncenter"><strong>Qty</strong></th>
+                              <th class="alignright"><strong>Total</strong></th>
+                            </tr>
+                            <tr>
+                              <td>98765</td>
+                              <td>Name Of This Product</td>
+                              <td class="aligncenter">2</td>
+                              <td class="alignright">$ 30.00</td>
+                            </tr>
+                            <tr class="subtotal">
+                              <td colspan="3" class="alignright" width="80%">Subtotal</td>
+                              <td class="alignright">$ 285.00</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" class="alignright" width="80%">Tax</td>
+                              <td class="alignright">$ 0.00</td>
+                            </tr>
+                            <tr>
+                              <td colspan="3" class="alignright" width="80%">Shipping</td>
+                              <td class="alignright">$ 0.00</td>
+                            </tr>
+                            <tr class="total">
+                              <td colspan="3" class="alignright" width="80%">Total</td>
+                              <td class="alignright">$ 285.00</td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block aligncenter" itemprop="handler" itemscope itemtype="http://schema.org/HttpActionHandler">
+                    <a href="http://www.mailgun.com" class="btn btn-default" itemprop="url">View or manage order</a>
+                  </td>
+                </tr>
+								<tr>
+									<td class="content-block aligncenter">
+										Your Company 123 Van Ness, San Francisco 94102
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<div class="footer">
+					<table width="100%">
+						<tr>
+							<td class="aligncenter content-block">Powered by <a href="#">Four51 OrderCloud&#8482;</td>
+						</tr>
+					</table>
+				</div></div>
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+</body>
+</html>

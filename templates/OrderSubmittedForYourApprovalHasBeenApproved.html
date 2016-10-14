@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Order Declined</title>
+<title>Approval Notification</title>
 <link href="styles.css" media="all" rel="stylesheet" type="text/css">
 
 <style type="text/css">
@@ -130,8 +130,8 @@
 			border-width:10px 20px;
 		}
 		.btn-default{
-			background-color:#999;
-			border:solid #999;
+			background-color:#2692D5;
+			border:solid #2692D5;
 			border-width:10px 20px;
 		}
 		.last{
@@ -276,16 +276,17 @@
 			<div class="content">
 				<table class="main" width="100%" cellpadding="0" cellspacing="0">
 					<tr>
-						<td class="alert alert-warning">
-							<h3>Your order from {{COMPANY}} has been declined.</h3>
+						<td class="logo-header">
+							<img src="https://gallery.mailchimp.com/0b66017d585470ad7e4ae88d6/images/8bd3e02f-ae0d-4785-828f-aec991c0196d.png" width="100" height="75" alt="OrderCloud">
 						</td>
 					</tr>
 					<tr>
 						<td class="content-wrap">
 							<table width="100%" cellpadding="0" cellspacing="0">
 								<tr>
-									<td class="content-block message">
-										<h3>Reason for decline:</h3> {{APPROVALCOMMENTS}}
+									<td class="content-block message aligncenter">
+										<h1>An order that required approval from you or your approval group has been approved. </h1>
+                    <h2>No further action is necessary.</h2>
 									</td>
 								</tr>
 								<tr>
@@ -293,10 +294,15 @@
                     <table class="oc-table">
                       <tr>
                         <td>
-                          <strong>Order ID:</strong> {{ORDERID}}<br>
+                          <strong>Order ID:</strong> {{OrderID}}<br>
                           <strong>Date Submitted:</strong> {{DATESUBMITTED}}<br>
-                          <strong>Declined By:</strong> {{APPROVERNAME}}<br><br>
-                          <strong>The following line item(s) were included in your order:</strong><br><br>
+                          <strong>Type:</strong> {{TYPE}}<br>
+                          <strong>Submitted By:</strong> {{SUBMITTEDBY}}<br>
+                          <strong>Comments:</strong> {{COMMENTS}}<br>
+                          <strong>Bill To:</strong><br>
+                          {{ADDRESSNAME}}<br>
+                          {{BILLINGADDRESS}}<br><br>
+                          <strong>The following line item(s) were included in this order:</strong><br><br>
                         </td>
                       </tr>
                       <tr>
@@ -340,7 +346,7 @@
                 </tr>
                 <tr>
                   <td class="content-block aligncenter" itemprop="handler" itemscope="" itemtype="http://schema.org/HttpActionHandler">
-                    <a href="https://devcenter.ordercloud.io" class="btn btn-default" itemprop="url">View or manage order</a>
+                    <a href="https://devcenter.ordercloud.io" class="btn btn-default" itemprop="url">View order</a>
                   </td>
                 </tr>
 								<tr>

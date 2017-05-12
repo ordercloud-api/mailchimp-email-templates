@@ -2,7 +2,7 @@
 
 [Read the blog post!](https://ordercloud.io/transactional-emails-mandrill-ordercloud-io/)
 
-## Available Mandril Template Merge Vars (as of January 6th, 2017)
+## Available Mandrill Template Merge Vars (as of January 6th, 2017)
 
 ### Password Reset Emails
 - username

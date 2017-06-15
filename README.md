@@ -2,7 +2,7 @@
 
 [Read the blog post!](https://ordercloud.io/transactional-emails-mandrill-ordercloud-io/)
 
-## Available Mandrill Template Merge Vars (as of January 6th, 2017)
+## Available Mandrill Template Merge Vars (as of June 15, 2017)
 
 ### Password Reset Emails
 - username
@@ -56,3 +56,33 @@
 | orderxp_KeyName         | For basic xp objects                                                   |
 | orderxp_KeyName_KeyName | For nested xp objects                                                  |
 | orderxp_KeyName_Index   | For xp arrays                                                          |
+|-------------------------|------------------------------------------------------------------------|
+| Vars below only avx on  |                                                                        |
+| Order Shipment Emails   |                                                                        |
+|-------------------------|------------------------------------------------------------------------|
+| ShipmentID              | Shipment.ID                                                            |
+| ShipmentTrackingNumber  | Shipment.TrackingNumber                                                |
+| Shipper                 | Shipment.Shipper                                                       |
+| dateShipped             | Shipment.DateShipped                                                   |
+| toAddressID             | Shipment.ToAddress.ID                                                  |
+| toAddressCompany        | Shipment.ToAddress.Company                                             |
+| toAddressFirstName      | Shipment.ToAddress.FirstName                                           |
+| toAddressLastName       | Shipment.ToAddress.LastName                                            |
+| toAddressStreet1        | Shipment.ToAddress.Street1                                             |
+| toAddressStreet2        | Shipment.ToAddress.Street2                                             |
+| toAddressCity           | Shipment.ToAddress.City                                                |
+| toAddressState          | Shipment.ToAddress.State                                               |
+| toAddressPostalCode     | Shipment.ToAddress.PostalCode                                          |
+| toAddressCountry        | Shipment.ToAddress.Country                                             |
+| toAddressName           | Shipment.ToAddress.AddressName                                         |
+|-------------------------|------------------------------------------------------------------------|
+| shipmentItems (array)   |                                                                        |
+|-------------------------|------------------------------------------------------------------------|
+| Cost                    | LineItem.LineTotal                                                     |
+| QuantityShipped         | Shipment.Item.QuantityShipped                                          |
+| ProductDesc             | Shipment.Item.Product.Description                                      |
+| ProductID               | Shipment.Item.Product.ID                                               |
+| ProductName             | Shipment.Item.Product.Name                                             |
+|-------------------------|------------------------------------------------------------------------|
+
+

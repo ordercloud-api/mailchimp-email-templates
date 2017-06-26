@@ -2,21 +2,21 @@
 
 # What Are You Trying To Do
 
-The [OrderCloud Platform]() is a great way to solve complex B2B eCommerce and order management challenges. But a key part of eCommerce is emails! Users expect emails when they place an order, get a shipment, etc. The OrderCloud platform provides a powerful tool to trigger emails based on OC Platform events: Message Senders. 
+The [OrderCloud Platform](https://ordercloud.io/) is a great way to solve complex B2B eCommerce and order management challenges. But a key part of eCommerce is emails! Users expect emails when they place an order, get a shipment, etc. The OrderCloud platform provides a powerful tool to trigger emails based on OC Platform events: Message Senders. 
 
-We provide a built-in Message Sender configuration to use with [MailChimp/Mandril](), but if you have a different preferred email sender, such as SendGrid or others, you can write your own custom Message Sender. See our documentation [here]().
+We provide a built-in Message Sender configuration to use with [MailChimp/Mandrill](https://mandrill.com/), but if you have a different preferred email sender, such as SendGrid or others, you can write your own custom Message Sender. See our documentation [here]().
 
 If you'd like to proceed with the Mandrill Message Sender, you need the following:
 
 1. A MailChimp account with [the Mandrill Transactional Email add-on](http://kb.mailchimp.com/mandrill/add-or-remove-mandrill)
-2. Your Mandrill API Key (this can be found in your Mandrill Settings page)*
+2. Your Mandrill API Key (this can be found in your Mandrill Settings page)[1]
 
-* If you'd just like to try out the Mandrill Message Sender, no problem! You can set up a message sender without a Mandrill API Key. However, this API key allows only a limited number of sends, and more importantly, uses the default OrderCloud-branded email templates! Get your own paid Mandrill account to configure your own custom email templates.
+[1]: If you'd just like to try out the Mandrill Message Sender, no problem! You can set up a message sender without a Mandrill API Key. However, this API key allows only a limited number of sends, and more importantly, uses the default OrderCloud-branded email templates! Get your own paid Mandrill account to configure your own custom email templates. 
 
 ## Configure OC Platform Message Sender
 
 ### Create The Message Sender
-1. Go to your [OrderCloud Dashboard](), and select the Organization that you'd like to configure a Message Sender for. Message Senders are configured at the organization level.
+1. Go to your [OrderCloud Dashboard](https://dashboard.ordercloud.io), and select the Organization that you'd like to configure a Message Sender for. Message Senders are configured at the organization level.
 2. Select "Message Senders" from the left nav.
 3. Hit "New"
 4. Add a name to your message sender, so you can distinguish it at a glance.
@@ -28,7 +28,7 @@ You now have a message sender! However, you're not done just yet. :)
 
 ### Assign The Message Sender
 
-1. In the [Console](), open the Seller Application that you'd like to set up emails for. 
+1. In the [Console](https://console.ordercloud.io/), open the Seller Application that you'd like to set up emails for. 
 2. Under "Seller", find "Message Senders" and select it.
 3. List your message senders. You'll see the message sender you just created, along with the configured message types for that sender.
 4. Assign that message sender to the buyer or user group that you want. This allows you to configure different emails for different buyers-- Buyer A wants a reply email that reflects their company name but Buyer B wants their own company name there? Buyer C uses Mandrill but Buyer D uses Sendgrid? You're set.

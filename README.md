@@ -61,4 +61,4 @@ You need a template for every message type that your message sender is configure
 You should now get emails for every configuration you set up!
 
 
-For more information, check out our [blog post!](https://ordercloud.io/transactional-emails-mandrill-ordercloud-io/), or ask us questions in our [OrderCloud Community Slack]().
+For more information, check out our [blog post](https://ordercloud.io/transactional-emails-mandrill-ordercloud-io/), or ask us questions in our [OrderCloud Community Slack]().

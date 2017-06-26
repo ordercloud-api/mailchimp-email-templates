@@ -1,7 +1,5 @@
 # Mailchimp Email Templates from OrderCloud.io
 
-# What Are You Trying To Do
-
 The [OrderCloud Platform](https://ordercloud.io/) is a great way to solve complex B2B eCommerce and order management challenges. But a key part of eCommerce is emails! Users expect emails when they place an order, get a shipment, etc. The OrderCloud platform provides a powerful tool to trigger emails based on OC Platform events: Message Senders. 
 
 We provide a built-in Message Sender configuration to use with [MailChimp/Mandrill](https://mandrill.com/), but if you have a different preferred email sender, such as SendGrid or others, you can write your own custom Message Sender. See our documentation [here]().

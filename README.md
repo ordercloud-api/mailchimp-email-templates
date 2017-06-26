@@ -2,13 +2,13 @@
 
 # What Are You Trying To Do
 
-The [OrderCloud Platform]() is a great way to solve complex B2B eCommerce and order management challenges. But a key part of eCommerce is emails! Users expect emails when they place an order, get a shipment, etc. The OrderCloud platform provides a powerful tool to trigger emails based on OC Platform events, Message Senders. 
+The [OrderCloud Platform]() is a great way to solve complex B2B eCommerce and order management challenges. But a key part of eCommerce is emails! Users expect emails when they place an order, get a shipment, etc. The OrderCloud platform provides a powerful tool to trigger emails based on OC Platform events: Message Senders. 
 
 We provide a built-in Message Sender configuration to use with [MailChimp/Mandril](), but if you have a different preferred email sender, such as SendGrid or others, you can write your own custom Message Sender. See our documentation [here]().
 
 If you'd like to proceed with the Mandrill Message Sender, you need the following:
 
-1. a MailChimp account with [the Mandrill Transactional Email add-on](http://kb.mailchimp.com/mandrill/add-or-remove-mandrill)
+1. A MailChimp account with [the Mandrill Transactional Email add-on](http://kb.mailchimp.com/mandrill/add-or-remove-mandrill)
 2. Your Mandrill API Key (this can be found in your Mandrill Settings page)*
 
 * If you'd just like to try out the Mandrill Message Sender, no problem! You can set up a message sender without a Mandrill API Key. However, this API key allows only a limited number of sends, and more importantly, uses the default OrderCloud-branded email templates! Get your own paid Mandrill account to configure your own custom email templates.
@@ -37,7 +37,7 @@ You now have a message sender! However, you're not done just yet. :)
 
 So, OrderCloud is all set up, but if you tried to trigger an email right now, you wouldn't get one. This is because OrderCloud is sending Mandrill data, but Mandrill doesn't know what to do with it yet! Time to set up some email templates.
 
-OrderCloud makes variables available to use in your Mandrill email templates. You can check out the full list [here](merge-vars.md). 
+OrderCloud makes variables available to use in your Mandrill email templates. You can check out the full list [here][../merge-vars.md]. 
 
 We also provide this repo of default email templates. These email templates have all been tested in the following email clients:
 - Outlook
@@ -48,7 +48,7 @@ However, when you make changes or if your clients use other email clients, we su
 
 ### Put Default Templates Into Mandrill
 
-You need a template for every message type that your message sender is configured for. It also has to be named in Mailchimp and Mandrill exactly what the message type in OrderCloud is.
+You need a template for every message type that your message sender is configured for. Your templates must have the exact same name as the message type in OrderCloud.
 
 1. Open your MailChimp account, and click on "Templates" in the top nav.
 2. Click "Create Template", and "Code Your Own"

@@ -37,7 +37,7 @@ You now have a message sender! However, you're not done just yet. :)
 
 So, OrderCloud is all set up, but if you tried to trigger an email right now, you wouldn't get one. This is because OrderCloud is sending Mandrill data, but Mandrill doesn't know what to do with it yet! Time to set up some email templates.
 
-OrderCloud makes variables available to use in your Mandrill email templates. You can check out the full list [here][../merge-vars.md]. 
+OrderCloud makes variables available to use in your Mandrill email templates. You can check out the full list [here](../merge-vars.md). 
 
 We also provide this repo of default email templates. These email templates have all been tested in the following email clients:
 - Outlook

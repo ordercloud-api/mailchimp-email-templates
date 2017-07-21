@@ -1,9 +1,14 @@
 # Available Mandrill Template Merge Vars (as of June 15, 2017)
 
 ## Password Reset Emails
-- username
-- passwordtoken
-- passwordrenewalurl
+
+|         mergeVar        |                         OrderCloud Equivalent                          |
+|-------------------------|------------------------------------------------------------------------|
+| username                | username                                                               |
+| password token          | passwordtoken                                                          |
+| password verification   | passwordverificationcode                                               |
+| password renewal url    | passwordrenewalurl                                                     |
+
 
 
 ## Order Emails 

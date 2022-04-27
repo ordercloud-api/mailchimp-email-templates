@@ -1,0 +1,134 @@
+$sc-red:               #ED1F1F;
+$sc-dark-red:          #AB0000;
+$sc-violet:            #5548D9;
+$sc-dark-violet:       #333378;
+$sc-teal:              #02999A;
+$sc-dark-teal:         #005E6E;
+$sc-yellow:            #FFE007;
+$sc-orange:            #FFB204;
+$sc-burnt-orange:      #EB7304;
+
+$xxx-dark:             #2b2b2b;   // XXX-Dark
+$xx-dark:              #474747;   // XX-Dark
+$x-dark:               #5e5e5e;   // X-Dark
+$dark:                 #969696;   // Dark
+$default:              #cccccc;   // Default
+$light:                #d6d6d6;   // Light
+$x-light:              #e3e3e3;   // X-Light
+$xx-light:             #f0f0f0;   // XX-Light
+$xxx-light:            #f7f7f7;   // XXX-Light
+$xxx-light:            #f2f7ed;   //  XXX-Light
+$xx-light:             #e2eed7;   //  XX-Light
+
+// Really shouldn't need to concern yourself with the colors listed below, but here they are anyways:
+
+$xxx-dark:             #588136;   //  XXX-Dark
+$x-dark:               #88bb5d;   //  X-Dark
+$default:              #a2ca81;   // Default
+$dark:                 #95c36f;   // Dark
+$x-light:              #cae1b7;   //  X-Light
+$xx-dark:              #6ea244;   //  XX-Dark
+$light:                #b7d69e;   // Light
+
+$xxx-light:            #f9d8d7;   // XXX-Light
+$dark:                 #ca241c;   // Dark
+$light:                #e54b43;   // Light
+$x-light:              #ed827d;   // X-Light
+$xx-dark:              #8b1913;   // XX-Dark
+$xxx-dark:             #63120d;   // XXX-Dark
+$x-dark:               #a21d16;   // X-Dark
+$default:              #dc291e;   // Default
+$xx-light:             #f4b2ae;   // XX-Light
+
+$dark:                 #289bc8;   // Dark
+$light:                #90d0e9;   // Light
+$xxx-dark:             #0f3c4d;   // XXX-Dark
+$xx-dark:              #185f7b;   // XX-Dark
+$default:              #6ac0e2;   // Default
+$x-dark:               #207da2;   // X-Dark
+$x-light:              #d0ebf6;   // X-Light
+$xxx-light:            #f2fafd;   // XXX-Light
+$xx-light:             #e5f4fa;   // XX-Light
+
+$black:                #131313;   // Black
+$white:                #ffffff;   // White
+
+$x-dark:               #3faed9;   // X-Dark
+$dark:                 #55b7dd;   // Dark
+$light:                #8ccee8;   // Light
+$x-light:              #aadbee;   // X-Light
+$default:              #6ac0e2;   // Default
+$xx-dark:              #2694c0;   // XX-Dark
+$xxx-dark:             #1e7699;   // XXX-Dark
+$xx-light:             #d0ebf6;   // XX-Light
+$xxx-light:            #eaf6fb;   // XXX-Light
+
+$xxx-dark:             #b39005;   // XXX-Dark
+$xx-dark:              #e0b406;   // XX-Dark
+$dark:                 #fad338;   // Dark
+$light:                #fce179;   // Light
+$xx-light:             #fef3c8;   // XX-Light
+$x-dark:               #f9ce1f;   // X-Dark
+$x-light:              #fce99c;   // X-Light
+$default:              #fbd951;   // Default
+$xxx-light:            #fefae6;   // XXX-Light
+$xxx-light:            #fef0e6;   // XXX-Light
+
+$xxx-dark:             #b34d05;   // XXX-Dark
+$light:                #fcaf79;   // Light
+$xx-dark:              #e06106;   // XX-Dark
+$x-dark:               #f97a1f;   // X-Dark
+$x-light:              #fcc49c;   // X-Light
+$dark:                 #fa8938;   // Dark
+$default:              #fb9851;   // Default
+$xx-light:             #fedfc8;   // XX-Light
+
+$xx-light:             #f8d0ce;   // XX-Light
+$xx-dark:              #ca241c;   // XX-Dark
+$light:                #ee8b86;   // Light
+$x-dark:               #e33e35;   // X-Dark
+$xxx-dark:             #a21d16;   // XXX-Dark
+$dark:                 #e7534b;   // Dark
+$default:              #ea6962;   // Default
+$x-light:              #f3a9a5;   // X-Light
+
+$xxx-light:            #fceae9;   // XXX-Light
+$x-dark:               #9f7a95;   // X-Dark
+$x-light:              #d4c4d0;   // X-Light
+$xxx-light:            #f4f0f3;   // XXX-Light
+$xxx-dark:             #6a4d63;   // XXX-Dark
+$dark:                 #a989a1;   // Dark
+$xx-dark:              #85607c;   // XX-Dark
+$default:              #b497ad;   // Default
+$light:                #c5afc0;   // Light
+$xx-light:             #e7dee5;   // XX-Light
+
+$xxx-dark:             #897b2f;   // XXX-Dark
+$xx-dark:              #ab9a3b;   // XX-Dark
+$x-light:              #e5ddb3;   // X-Light
+$x-dark:               #c4b454;   // X-Dark
+$default:              #d1c47a;   // Default
+$dark:                 #cbbc67;   // Dark
+$light:                #dcd298;   // Light
+$xx-light:             #f1edd5;   // XX-Light
+$xxx-light:            #f8f7ec;   // XXX-Light
+
+$xx-dark:              #b17935;   // XX-Dark
+$x-dark:               #ca924e;   // X-Dark
+$xx-light:             #f2e4d4;   // XX-Light
+$dark:                 #d09f62;   // Dark
+$default:              #d6ab76;   // Default
+$light:                #dfbe95;   // Light
+$xxx-dark:             #8d612a;   // XXX-Dark
+$x-light:              #e8cfb0;   // X-Light
+$xxx-light:            #f9f3eb;   // XXX-Light
+
+$xxx-dark:             #5c5c5c;   // XXX-Dark
+$xx-dark:              #737373;   // XX-Dark
+$x-dark:               #8c8c8c;   // X-Dark
+$dark:                 #999999;   // Dark
+$default:              #a6a6a6;   // Default
+$light:                #bababa;   // Light
+$x-light:              #cccccc;   // X-Light
+$xx-light:             #e3e3e3;   // XX-Light
+$xxx-light:            #f2f2f2;   // XXX-Light

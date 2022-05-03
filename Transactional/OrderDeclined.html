@@ -96,9 +96,9 @@
 		}
 
 		.message {
-			border-bottom: 1px solid #eee;
+			border-bottom: 1px solid #FFB204;
 			padding: 20px 20px 40px;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 			display: block;
 		}
 
@@ -293,6 +293,10 @@
 		.display-1 {
 			font-weight: 600;
 		}
+		
+		.display-2 {
+			margin-top: 5px;
+		}
 
 		@media (prefers-color-scheme: dark) {
 
@@ -374,7 +378,7 @@
 			h2,
 			h3,
 			h4 {
-				
+
 				margin: 20px 0 5px !important;
 			}
 
@@ -440,7 +444,6 @@
 	</style>
 </head>
 
-
 <body itemscope="" itemtype="http://schema.org/EmailMessage">
 
 	<table class="body-wrap">
@@ -450,16 +453,22 @@
 				<div class="content">
 					<table class="main" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
-							<td class="alert alert-warning">
-								<h3>Your order from {{COMPANY}} has been declined.</h3>
+							<td class="logo-header">
+								<img src="https://mcusercontent.com/0b66017d585470ad7e4ae88d6/images/fed5b126-053e-4a05-1fc2-64be891caef4.png"
+									width="150" alt="OrderCloud">
 							</td>
 						</tr>
 						<tr>
-							<td class="content-wrap">
+							<td class="content-wrap aligncenter">
 								<table width="100%" cellpadding="0" cellspacing="0">
 									<tr>
 										<td class="content-block message">
-											<h3 class="display-1">Reason for decline:</h3> {{APPROVALCOMMENTS}}
+											<h1 class="display-1 aligncenter">Your order has been declined</h1>
+										</td>
+									</tr>
+									<tr>
+										<td class="message alignleft">
+											<h3 class="display-2">Reason for decline:</h3> {{APPROVERNAME}}: {{APPROVALCOMMENTS}}
 										</td>
 									</tr>
 									<tr>
@@ -467,11 +476,10 @@
 											<table class="oc-table">
 												<tr>
 													<td>
-														<strong>Order ID:</strong> {{ORDERID}}<br>
-														<strong>Date Submitted:</strong> {{DATESUBMITTED}}<br>
-														<strong>Declined By:</strong> {{APPROVERNAME}}<br><br>
-														<strong>The following line item(s) were included in your
-															order:</strong><br><br>
+														<strong>Order ID:</strong> {{OrderID}}<br>
+														<strong>Date Submitted:</strong> {{DATESUBMITTED}}<br><br>
+														<strong>The following line item(s) were included in your order:
+														</strong><br><br>
 													</td>
 												</tr>
 												<tr>
@@ -544,9 +552,12 @@
 					</div>
 				</div>
 			</td>
-			<td></td>
 		</tr>
 	</table>
+
+	<td></td>
+
+
 
 </body>
 

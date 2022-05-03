@@ -1,9 +1,5 @@
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-	<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
@@ -16,7 +12,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
 
 	<!----------------------------------------->
 	<!----- MAKE SURE YOU EDIT THIS TITLE ----->
@@ -100,8 +96,9 @@
 		}
 
 		.message {
-			border-bottom: 1px solid #eee;
-			margin-bottom: 40px;
+			border-bottom: 1px solid #D0021B;
+			padding: 20px 20px 40px;
+			margin-bottom: 20px;
 			display: block;
 		}
 
@@ -132,7 +129,7 @@
 		}
 
 		h1 {
-			font-size: 32px;
+			font-size: 30px;
 			font-weight: 500;
 		}
 
@@ -233,8 +230,23 @@
 			margin: 0;
 		}
 
+		.alert a {
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			font-size: 16px;
+		}
+
+		.alert.alert-warning {
+			background-color: #FFB204;
+		}
+
 		.alert.alert-bad {
-			background-color: #ED1F1F;
+			background-color: #D0021B;
+		}
+
+		.alert.alert-good {
+			background-color: #68B90F;
 		}
 
 		.oc-table {
@@ -281,6 +293,10 @@
 		.display-1 {
 			font-weight: 600;
 		}
+		
+		.display-2 {
+			margin-top: 5px;
+		}
 
 		@media (prefers-color-scheme: dark) {
 
@@ -306,6 +322,10 @@
 
 			.display-1 {
 				color: #cccccc !important;
+			}
+
+			.display-2 {
+				color: #969696 !important;
 			}
 
 			.oc-table .oc-table-items td {
@@ -336,6 +356,10 @@
 			color: #e3e3e3 !important;
 		}
 
+		[data-ogsc] .display-2 {
+			color: #cccccc !important;
+		}
+
 		[data-ogsc] .content-wrap {
 			background-color: #474747 !important;
 			color: #d6d6d6;
@@ -354,7 +378,7 @@
 			h2,
 			h3,
 			h4 {
-				
+
 				margin: 20px 0 5px !important;
 			}
 
@@ -429,13 +453,19 @@
 				<div class="content">
 					<table class="main" width="100%" cellpadding="0" cellspacing="0">
 						<tr>
-							<td class="alert alert-bad">
-								<h3>Your order from {{COMPANY}} has been cancelled.</h3>
+							<td class="logo-header">
+								<img src="https://mcusercontent.com/0b66017d585470ad7e4ae88d6/images/fed5b126-053e-4a05-1fc2-64be891caef4.png"
+									width="150" alt="OrderCloud">
 							</td>
 						</tr>
 						<tr>
-							<td class="content-wrap">
+							<td class="content-wrap aligncenter">
 								<table width="100%" cellpadding="0" cellspacing="0">
+									<tr>
+										<td class="content-block message">
+											<h1 class="display-1 aligncenter">Your order from {{COMPANY}} has been cancelled</h1>
+										</td>
+									</tr>
 									<tr>
 										<td class="content-block">
 											<table class="oc-table">
@@ -443,8 +473,8 @@
 													<td>
 														<strong>Order ID:</strong> {{OrderID}}<br>
 														<strong>Date Submitted:</strong> {{DATESUBMITTED}}<br><br>
-														<strong>The following line item(s) were included in your
-															order:</strong><br><br>
+														<strong>The following line item(s) were included in your order:
+														</strong><br><br>
 													</td>
 												</tr>
 												<tr>
@@ -517,9 +547,12 @@
 					</div>
 				</div>
 			</td>
-			<td></td>
 		</tr>
 	</table>
+
+	<td></td>
+
+
 
 </body>
 

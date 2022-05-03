@@ -319,10 +319,6 @@
                 background-color: #2b2b2b;
             }
 
-            .logo-header--prefersLight {
-                display: none;
-            }
-
             .display-1 {
                 color: #cccccc !important;
             }
@@ -346,37 +342,25 @@
             }
 
             .logo-header {
-                background-color: #969696;
-            }
-
-            .logo-header--prefersDark {
-                display: none;
+                background-color: #474747;
             }
         }
 
         /* Outlook workaround: https://litmus.com/community/discussions/8256-outlook-app-vs-dark-mode-on-ios-a-disaster#comment-16402 */
-        [data-ogsc] .logo-header--prefersLight {
-            display: none;
-            background-color: #969696;
-        }
 
-        [data-ogsc] .logo-header--prefersDark {
-            display: block !important;
-            background-color: #2b2b2b !important;
-        }
 
-        [data-ogsc] .display-1 {
-            color: #e3e3e3 !important;
-        }
+		[data-ogsc] .display-1 {
+			color: #e3e3e3 !important;
+		}
 
-        [data-ogsc] .display-2 {
-            color: #cccccc !important;
-        }
+		[data-ogsc] .display-2 {
+			color: #cccccc !important;
+		}
 
-        [data-ogsc] .content-wrap {
-            background-color: #474747 !important;
-            color: #d6d6d6;
-        }
+		[data-ogsc] .content-wrap {
+			background-color: #474747 !important;
+			color: #d6d6d6;
+		}
 
         @media only screen and (max-width: 640px) {
             body {
@@ -391,7 +375,7 @@
             h2,
             h3,
             h4 {
-                
+
                 margin: 20px 0 5px !important;
             }
 
@@ -466,15 +450,9 @@
                 <div class="content">
                     <table class="main" width="100%" cellpadding="0" cellspacing="0">
                         <tr>
-                            <!-- Dark Mode Logo -->
-                            <td class="logo-header logo-header--prefersDark">
+                            <td class="logo-header">
                                 <img src="https://mcusercontent.com/0b66017d585470ad7e4ae88d6/images/fed5b126-053e-4a05-1fc2-64be891caef4.png"
-                                    width="150" alt="OrderCloud">
-                            </td>
-                            <!-- Light Mode Logo -->
-                            <td class="logo-header logo-header--prefersLight">
-                                <img src="https://mcusercontent.com/0b66017d585470ad7e4ae88d6/images/2568545c-e77b-9102-0a54-02f0c8c61471.png"
-                                    width="150" alt="OrderCloud">
+                                    width="150" alt="Sitecore Logo">
                             </td>
                         </tr>
                         <tr>
@@ -494,15 +472,15 @@
                         </tr>
                     </table>
                     <div class="footer">
-						<table width="100%">
-							<tr>
-								<td class="aligncenter">© Copyright {{CURRENTYEAR}}, <a target="_blank" rel="noreferrer"
-										href="https://ordercloud.io/">Sitecore OrderCloud</a><sup><small
-											style="font-size:8px;">®</small></sup>. All rights reserved.
-								</td>
-							</tr>
-						</table>
-					</div>
+                        <table width="100%">
+                            <tr>
+                                <td class="aligncenter">© Copyright {{CURRENTYEAR}}, <a target="_blank" rel="noreferrer"
+                                        href="https://ordercloud.io/">Sitecore OrderCloud</a><sup><small
+                                            style="font-size:8px;">®</small></sup>. All rights reserved.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </td>
             <td></td>
